@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,8 +15,12 @@ export default defineConfig({
       }
     }
   },
+  build: {
+    outDir: 'dist', // Ensure the output directory is 'dist'
+    sourcemap: true, // Optional: generates source maps for debugging
+  },
   test: {
     globals: true,
     environment: 'happy-dom'
   }
-})
+});
