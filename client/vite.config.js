@@ -16,7 +16,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'dist', // Ensure the output directory is 'dist'
+    outDir: 'dist',
     sourcemap: true, // Optional: generates source maps for debugging
   },
   test: {
